@@ -1,0 +1,1719 @@
+/* === FONT-FAMILY LINK === */
+
+/* === OSWALD-ALL === */
+@font-face {
+    font-family: Oswald-VariableFont;
+    src: url(../font/Oswald/Oswald-VariableFont_wght.ttf);
+}
+
+/* === POPPINS-REGULAR === */
+@font-face {
+    font-family: Poppins-Regular;
+    src: url(../font/Poppins/Poppins-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === ALL COMON CLASS === */
+.container {
+    max-width: 1178px;
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+h1,
+h2,
+h3,
+span {
+    font-family: Oswald-VariableFont;
+}
+
+h2 {
+    font-size: 50px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+h2::before {
+    content: '';
+    position: absolute;
+    width: 100px;
+    height: 1px;
+    background-color: black;
+}
+
+.sub-span {
+    color: var(--blue);
+    text-transform: uppercase;
+}
+
+p,
+a,
+ul li {
+    font-family: Poppins-Regular;
+    text-decoration: none;
+    list-style-type: none;
+}
+/* === FULL PAGE COLLOR ROOT === */
+:root {
+    --blue: #1C74BC;
+    --black: #0000;
+    --white: #ffff;
+    --ofwhite: #CECECE;
+    --gray: #242737;
+    --graylight: #666666;
+}
+
+
+/* <!-- === HEADER PART CSS START === --> */
+.lts-header {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+}
+
+.header-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 3% 0;
+}
+
+.hed-logo {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hed-logo i {
+    color: whitesmoke;
+    font-size: 25px;
+    border: 2px solid white;
+    padding: 1%;
+    display: none;
+}
+
+.hed-right {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    width: 70%;
+    gap: 47px;
+    padding-right: 5px;
+    
+}
+
+.hed-right li a {
+    font-size: 16px;
+    color: var(--white);
+}
+
+.hed-btn {
+    font-size: 16px;
+    padding: 13px 23px 13px 23px;
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.hed-btn:hover {
+    border: 1px solid var(--white);
+    background-color: transparent;
+    box-shadow: rgba(245, 243, 243, 0.695) 0px 3px 8px;
+}
+
+/* <!-- === BANNER PART CSS START === --> */
+.lts-banner {
+    position: relative;
+    padding: 11% 0 0 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+
+.lts-banner::before {
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0) 0%, rgba(0, 0, 0, 0.8519782913165266) 100%);
+}
+
+.banner-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.banner-text {
+    width: 50%;
+    padding-bottom: 19.3%;
+    margin: 114px 0 0 4px;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-text h1 {
+    font-size: 110px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 0.1vw var(--white);
+    line-height: 140px;
+}
+
+.banner-text span {
+    font-size: 38px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.banner-text p {
+    font-size: 20px;
+    color: var(--ofwhite);
+    padding: 0 91px 0 20px;
+    position: relative;
+    line-height: 35px;
+    margin-top: 11px;
+}
+
+.banner-text p::before {
+    content: '';
+    position: absolute;
+    height: 69px;
+    width: 4px;
+    background-color: var(--blue);
+    left: 0;
+}
+
+.banner-icon {
+    width: 10%;
+    position: absolute;
+    right: 0;
+    top: 340px;
+}
+
+.banner-icon ul {
+    width: 20%;
+    text-align: center;
+    line-height: 50px;
+    position: relative;
+    z-index: 1;
+}
+
+.banner-icon ul::before {
+    position: absolute;
+    content: url(../img/Line\ 2.svg);
+    top: -122px;
+}
+
+.banner-icon ul::after {
+    position: absolute;
+    content: url(../img/Line\ 3.svg);
+    bottom: -122px;
+}
+
+/* <!-- === WELCOM TO LTS PART CSS START === --> */
+.welcome-inner {
+    display: flex;
+    padding: 4% 0 13.6% 0;
+}
+
+.welcome-img {
+    width: 50%;
+    position: relative;
+}
+
+.welcome-img .wc-logo {
+    height: 463px;
+    width: 474px;
+    position: absolute;
+    top: 28px;
+    left: 8px;
+}
+
+.wc-video {
+    width: 265px;
+    height: 222px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 338px;
+    right: 15px;
+    z-index: 1;
+    background-image: url(../img/containers-vans-eCc7FjMoR74.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 4px solid var(--white);
+}
+
+.wc-video .vdo-icon {
+    height: 65px;
+    width: 65px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-image: url(../img/Ellipse\ 97.svg);
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.wc-video .vdo-icon i {
+    color: var(--blue);
+    font-size: 20px;
+}
+
+.car-video {
+    background-color: black;
+    position: absolute;
+    z-index: 2;
+    width: 700px;
+    height: 570px;
+    top: 0;
+    right: 0;
+}
+
+.car-video i {
+    color: white;
+    position: absolute;
+    right: 50px;
+    top: 50px;
+    font-size: 30px;
+}
+
+.car-video i:hover {
+    color: wheat;
+    box-shadow: rgba(249, 249, 249, 0.35) 0px 5px 15px;
+}
+
+.car-video video {
+    margin: 100px 0 0 30px;
+}
+
+.car-video {
+    display: none;
+}
+
+.video-show {
+    display: block;
+}
+
+.video-hide {
+    display: none;
+}
+
+.welcome-lext {
+    width: 50%;
+    padding: 100px 0 0 60px;
+}
+
+.welcome-lext h2::before {
+    top: 85px;
+}
+
+.welcome-lext p {
+    font-size: 18px;
+    margin-top: 30px;
+    line-height: 27px;
+    padding-right: 2px;
+    color: var(--gray);
+}
+
+/* <!-- === DISCOVER OUR STORY CSS PART START === --> */
+.discover {
+    background-image: url(../img/Ellipse\ 3.png);
+    background-repeat: no-repeat;
+    background-color: #1C74BC;
+    background-blend-mode: overlay;
+}
+
+.discover-inner {
+    display: flex;
+    padding: 5% 0 8.2% 0;
+}
+
+.discover-left {
+    width: 40%;
+    padding: 15px 20px 0 4px;
+}
+
+.discover-left h2 {
+    line-height: 67px;
+}
+
+.discover-left h2::before {
+    bottom: -10px;
+}
+
+.discover-left span {
+    color: var(--white);
+}
+
+.discover-right {
+    width: 60%;
+    padding: 25px 0 0 35px;
+    line-height: 30px;
+}
+
+.discover-right p {
+    font-size: 18px;
+    margin-bottom: 42px;
+    color: var(--white);
+}
+
+.discover-btn {
+    padding: 14px 24px 14px 24px;
+    color: var(--blue);
+    background-color: var(--white);
+    transition: 0.3s ease all;
+}
+
+.discover-btn:hover {
+    cursor: pointer;
+    border: 1px solid var(--white);
+    color: var(--white);
+    background-color: transparent;
+}
+
+/* <!-- === CAR STORY PART CSS START === --> */
+
+/* == card div == */
+.car-story-slider .card-blank {
+    background-image: url(../img/white-van-on-the-road-during-daytime-BvE9dPo7wtw.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 50%;
+    height: 800px;
+    display: flex !important;
+    align-items: end !important;
+    transition: 0.4s ease-out;
+    position: relative;
+}
+
+.card-blank::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(5deg, rgba(0, 0, 0, 1) 0%, transparent 100%);
+}
+
+.card-blank .card-text {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100px;
+    padding: 18px 0 0 23px;
+    transition: 0.5s;
+}
+
+.card-blank .card-text:hover {
+    border-radius: 15px;
+    width: 100%;
+    height: 300px;
+    padding-top: 30%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5410539215686274) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.card-blank .card-text h3 {
+    text-transform: uppercase;
+    position: relative;
+    color: var(--white);
+}
+
+.card-blank .card-text h3::after {
+    content: '';
+    height: 1px;
+    width: 50%;
+    background: linear-gradient(to right, white 0%, transparent 100%);
+    position: absolute;
+    bottom: 12px;
+    left: 150px;
+}
+
+.card-blank .card-text p {
+    font-size: 18px;
+    margin: 16px 0 20px 0px;
+    color: var(--graylight);
+}
+
+.card-blank .card-text a {
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+/* == card-dayvan div == */
+.car-story-slider .card-dayvan {
+    background-image: url(../img/brown-cardboard.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 50%;
+    height: 800px;
+    display: flex !important;
+    align-items: end !important;
+    transition: 0.4s ease-out;
+    position: relative;
+}
+
+.card-dayvan::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(5deg, rgba(0, 0, 0, 1) 0%, transparent 100%);
+}
+
+.card-dayvan .card-text {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 200px;
+    padding: 18px 0 0 23px;
+    transition: 0.5s;
+}
+
+.card-dayvan .card-text:hover {
+    border-radius: 15px;
+    width: 100%;
+    height: 570px;
+    padding-top: 50%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5410539215686274) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.card-dayvan .card-text h3 {
+    text-transform: uppercase;
+    position: relative;
+    color: var(--white);
+}
+
+.card-dayvan .card-text h3::after {
+    content: '';
+    height: 1px;
+    width: 70%;
+    background: linear-gradient(to right, white 0%, transparent 100%);
+    position: absolute;
+    bottom: 12px;
+    left: 75px;
+}
+
+.card-dayvan .card-text p {
+    font-size: 18px;
+    margin: 16px 0 20px 0px;
+    color: var(--graylight);
+}
+
+.card-dayvan .card-text a {
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+/* == card-temp div == */
+
+.car-story-slider .card-temp {
+    background-image: url(../img/pick-up-truck-parked.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 50%;
+    height: 800px;
+    display: flex !important;
+    align-items: end !important;
+    transition: 0.4s ease-out;
+    position: relative;
+}
+
+.card-temp::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(5deg, rgba(0, 0, 0, 1) 0%, transparent 100%);
+}
+
+.card-temp .card-text {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100px;
+    padding: 18px 0 0 23px;
+    transition: 0.5s;
+}
+
+.card-temp .card-text:hover {
+    border-radius: 15px;
+    width: 100%;
+    height: 300px;
+    padding-top: 30%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5410539215686274) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.card-temp .card-text h3 {
+    text-transform: uppercase;
+    position: relative;
+    color: var(--white);
+}
+
+.card-temp .card-text h3::after {
+    content: '';
+    height: 1px;
+    width: 60%;
+    background: linear-gradient(to right, white 0%, transparent 100%);
+    position: absolute;
+    bottom: 12px;
+    left: 150px;
+}
+
+.card-temp .card-text p {
+    font-size: 18px;
+    margin: 16px 0 20px 0px;
+    color: var(--graylight);
+}
+
+.card-temp .card-text a {
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+/* == card-flatbed div == */
+
+.car-story-slider .card-flatbed {
+    background-image: url(../img/a-truck-with-lights-on-3RJfWO8rsb0.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 100% 100%;
+    width: 50%;
+    height: 800px;
+    display: flex !important;
+    align-items: end !important;
+    transition: 0.4s ease-out;
+    position: relative;
+}
+
+.card-flatbed::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    background: rgb(0, 0, 0);
+    background: linear-gradient(5deg, rgba(0, 0, 0, 1) 0%, transparent 100%);
+}
+
+.card-flatbed .card-text {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    height: 100px;
+    padding: 18px 0 0 23px;
+    transition: 0.5s;
+}
+
+.card-flatbed .card-text:hover {
+    border-radius: 15px;
+    width: 100%;
+    height: 300px;
+    padding-top: 30%;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.5410539215686274) 0%, rgba(0, 0, 0, 1) 100%);
+}
+
+.card-flatbed .card-text h3 {
+    text-transform: uppercase;
+    position: relative;
+    color: var(--white);
+}
+
+.card-flatbed .card-text h3::after {
+    content: '';
+    height: 1px;
+    width: 70%;
+    background: linear-gradient(to right, white 0%, transparent 100%);
+    position: absolute;
+    bottom: 12px;
+    left: 70px;
+}
+
+.card-flatbed .card-text p {
+    font-size: 18px;
+    margin: 16px 0 20px 0px;
+    color: var(--graylight);
+}
+
+.card-flatbed .card-text a {
+    text-decoration: underline;
+    font-size: 18px;
+}
+
+/* <!-- === WHY CHOOSE  US? PART CSS START === --> */
+.why-choose-inner {
+    padding: 7% 0 9.5% 0;
+}
+
+.why-choose-top {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.why-choose-top span {
+    color: #1C74BC;
+}
+
+.why-choose-top h2 {
+    position: relative;
+}
+
+.why-choose-top h2::before {
+    top: 81px;
+    left: 525px;
+}
+
+.why-choose-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: 5%;
+}
+
+.why-choose-wrap .content {
+    width: 263px;
+}
+
+.why-choose-wrap .content img {
+    margin-left: 30px;
+}
+
+.why-choose-wrap .content h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    margin: 20px 0 0 4px;
+    position: relative;
+}
+
+.why-choose-wrap .content h3::before {
+    content: '';
+    position: absolute;
+    height: 1px;
+    width: 49px;
+    background-color: black;
+    top: 48px;
+}
+
+.why-choose-wrap .content p {
+    font-size: 18px;
+    margin: 33px 0 0 0px;
+    line-height: 27px;
+}
+
+/* <!-- === WHAT OUR CLIENT CSS PART START === --> */
+
+.client {
+    background: rgb(0, 0, 0);
+    background-repeat: no-repeat;
+    background-position: right;
+    position: relative;
+}
+
+.sado-left {
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.sado-right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 30%;
+}
+
+.sado-right img {
+    width: 100%;
+}
+
+.client .container {
+    background-image: url(../img/image\ 8.png);
+    background-repeat: no-repeat;
+    background-position: right;
+}
+
+.our-client-main {
+    padding-top: 5%;
+    padding-bottom: 5.9%;
+}
+
+.our-client-main h2 {
+    text-align: center;
+    color: var(--white);
+}
+
+.our-client-main h2::before {
+    top: 105px;
+    left: 533px;
+}
+
+.our-client-main h2 span {
+    color: var(--blue);
+}
+
+.client-content {
+    text-align: center;
+    padding-top: 30px;
+}
+
+.client-content img {
+    margin: auto;
+}
+
+.client-content h3 {
+    text-transform: uppercase;
+    font-size: 20px;
+    color: var(--white);
+}
+
+.client-content p {
+    font-size: 18px;
+    padding: 0 216px;
+    margin-top: 30px;
+    color: #666666;
+}
+
+.client-slider {
+    position: relative;
+    z-index: 4;
+}
+
+.client-slider .pre-arow-btn {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    z-index: 5;
+    font-size: 20px;
+    position: absolute;
+    left: -10px;
+    top: 220px;
+    color: var(--white);
+}
+
+.client-slider .pre-arow-btn:hover {
+    border: 1px solid var(--gray);
+    color: var(--blue);
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.175) 0px 5px 15px;
+}
+
+.client-slider .next-arow-btn {
+    position: absolute;
+    z-index: 5;
+    top: 220px;
+    right: -10px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    display: inline-block;
+    color: var(--white);
+}
+
+.client-slider .next-arow-btn:hover {
+    border: 1px solid var(--gray);
+    color: var(--blue);
+    cursor: pointer;
+    box-shadow: rgba(255, 255, 255, 0.175) 0px 5px 15px;
+}
+
+.partners-inner {
+    padding-top: 6%;
+}
+
+.partners-inner h3 {
+    margin: 5px 0 0 5px;
+    text-transform: uppercase;
+    font-size: 20px;
+    color: var(--white);
+}
+
+.Partners-slider {
+    margin-top: 30px;
+
+}
+
+.Partners-slider .card {
+
+    margin: auto;
+}
+
+.slick-dots {
+    display: flex;
+    justify-content: center;
+    margin-top: 35px;
+}
+
+.slick-dots li {
+    margin: 0 6px;
+}
+
+.slick-dots li.slick-active button {
+    background-color: white;
+}
+
+.slick-dots button {
+    display: block;
+    width: 15px;
+    height: 15px;
+    padding: 0;
+    border: none;
+    border-radius: 50%;
+    background-color: #00B2FF;
+}
+
+
+
+
+/* <!-- === FOOTER PART CSS  START === --> */
+
+.lts-footer {
+    background-color: black;
+    position: relative;
+    z-index: 2;
+}
+.ftr-right-sado{
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+}
+.ftr-right-sado img{
+    width: 600px;
+    height: 289px;
+}
+.footer-inner {
+    display: flex;
+    padding: 4% 0 0 3%;
+}
+
+.ftr-logo {
+    width: 30%;
+    margin: 0 0 0 5px;
+}
+
+.ftr-logo .inner-logo {
+    width: 112px;
+    height: 110px;
+}
+
+.ftr-logo p {
+    font-size: 16px;
+    margin-top: 10px;
+    color: #666666;
+}
+
+.ftr-logo ul {
+    display: flex;
+    align-items: center;
+    margin-top: 18px;
+    gap: 16px;
+}
+
+.ftr-logo .inner-logo img {
+    width: 100%;
+
+}
+
+.ftr-list {
+    display: flex;
+    width: 70%;
+    padding-top: 25px;
+}
+
+.ftr-list h3 {
+    font-size: 20px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.ftr-list ul li a {
+    font-size: 16px;
+    color: #666666;
+    cursor: pointer;
+}
+
+.ftr-list .ftr-links {
+    margin-left: 48px;
+    width: 200px;
+}
+
+.ftr-list .ftr-links ul {
+    line-height: 25px;
+    margin-top: 5px;
+}
+
+.ftr-list .ftr-shippers {
+    margin-left: 20px;
+    width: 200px;
+}
+
+.ftr-list .ftr-shippers ul {
+    line-height: 25px;
+    margin-top: 5px;
+}
+
+.ftr-list .frt-contact {
+    margin-left: 15px;
+}
+
+.ftr-list .frt-contact ul {
+    line-height: 38px;
+}
+
+.ftr-list .frt-contact ul li {
+    display: flex;
+    align-items: center;
+}
+
+.ftr-list .frt-contact ul li a {
+    font-size: 18px;
+    margin-left: 5px;
+}
+
+.ftr-end {
+    padding: 20px 0;
+    color: #666666;
+    text-align: center;
+    font-size: 16px;
+    text-transform: uppercase;
+}
+
+
+@media screen and (max-width:1299px) {
+
+    /* <!-- === BANNER PART CSS START === --> */
+    .lts-banner {
+        padding: 11% 0;
+    }
+
+    .banner-text {
+        padding-bottom: 0;
+    }
+
+    .banner-icon {
+        width: auto;
+        position: static;
+        margin-top: 100px;
+    }
+
+    /* <!-- === WELCOM TO LTS PART START === --> */
+
+    .welcome-inner {
+        padding: 10% 0;
+    }
+
+    .wc-video {
+        right: 0;
+    }
+
+    .car-video {
+        width: 100%;
+
+    }
+
+    .car-video video {
+        margin: 100px 0 0 0;
+    }
+
+    /* <!-- === DISCOVER OUR STORY CSS PART START === --> */
+
+    .discover-inner {
+        padding: 5% 0;
+    }
+
+    /* <!-- === CAR STORY PART START === --> */
+    .car-story-slider {
+        padding-top: 5%;
+    }
+
+    .card-blank .card-text,
+    .card-dayvan .card-text,
+    .card-flatbed .card-text,
+    .card-temp .card-text {
+        padding: 4%;
+    }
+
+    .card-temp .card-text h3::after,
+    .card-blank .card-text h3::after {
+        width: 40%;
+    }
+
+    .card-flatbed .card-text h3::after,
+    .card-dayvan .card-text h3::after {
+        width: 50%;
+    }
+
+    /* <!-- === WHY CHOOSE  US? PART CSS START === --> */
+    .why-choose-inner {
+        padding: 5% 0;
+    }
+
+    .why-choose-wrap {
+        justify-content: space-around;
+    }
+
+    .why-choose-wrap .content {
+        margin-bottom: 20px;
+    }
+
+    .why-choose-top h2::before {
+        left: auto;
+    }
+
+    /* <!-- === WHAT OUR CLIENT CSS PART START === --> */
+    .our-client-main h2::before {
+        left: auto;
+    }
+
+    .sado-left {
+        width: 50%;
+        height: auto;
+        top: 50%;
+    }
+
+    .sado-left img {
+        width: 100%;
+    }
+
+    .sado-right {
+        width: 40%;
+        height: auto;
+    }
+
+    .sado-right img {
+        width: 100%;
+    }
+
+    /* <!-- === FOOTER PART CSS  START === --> */
+
+    .footer-inner {
+        padding: 4% 0;
+    }
+    .ftr-list {
+        flex-wrap: wrap;
+        justify-content: space-around;
+        padding-top: 0;
+        margin-top: 10px;
+    }
+
+    .ftr-list .ftr-links {
+        margin-left: 0;
+        width: auto;
+    }
+
+    .ftr-list .ftr-shippers {
+        margin-left: 0;
+        width: auto;
+    }
+
+    .ftr-list .frt-contact {
+        margin-left: 0;
+        width: auto;
+    }
+    .ftr-right-sado{
+        top: 0;
+        right: 0;
+        bottom: 0;
+    }
+    .ftr-right-sado img{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:991px) {
+
+    /* <!-- === HEADER PART CSS START === --> */
+    .header-inner {
+        flex-direction: column;
+    }
+
+    .hed-logo {
+        width: 100%;
+    }
+
+    .main-logo {
+        height: 100px;
+        width: 100px;
+    }
+
+    .hed-logo img {
+        width: 100%;
+    }
+
+
+    .hed-right {
+        box-shadow: rgba(245, 243, 243, 0.695) 0px 3px 8px;
+        display: none;
+        padding: 2%;
+        gap: 0;
+        width: 100%;
+        flex-direction: column;
+        align-items: flex-start;
+        background: rgb(0, 0, 0);
+        background: linear-gradient(180deg, rgba(0, 0, 0, 0.5410539215686274) 0%, rgba(0, 0, 0, 1) 100%);
+    }
+
+    .hed-right li {
+        margin: 10px 0;
+    }
+
+    .hed-btn {
+        padding: 1%;
+    }
+    .hed-logo i {
+        display: block;
+        box-shadow: rgba(245, 243, 243, 0.695) 0px 3px 8px;
+    }
+    
+
+    .show {
+        display: block;
+    }
+
+    /* <!-- === BANNER PART CSS START === --> */
+
+    .lts-banner {
+        padding: 5% 0;
+    }
+
+    .banner-text {
+        width: 70%;
+    }
+
+    .banner-text h1 {
+        font-size: 100px;
+        line-height: normal;
+    }
+
+    /* <!-- === WELCOM TO LTS PART START === --> */
+
+    .welcome-inner {
+        flex-direction: column;
+        padding: 5% 0;
+    }
+
+    .welcome-img {
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+        margin: auto;
+        position: static;
+    }
+
+    .welcome-img .wc-logo {
+        position: static;
+    }
+
+    .wc-video {
+        position: static;
+
+    }
+
+    .car-video {
+        top: 65%;
+    }
+
+    .car-video video {
+        margin: 80px 0 0 0px;
+    }
+
+    .welcome-lext {
+        width: 100%;
+        padding: 20px 0;
+    }
+
+    .welcome-lext h2 {
+        text-align: center;
+    }
+
+    /* <!-- === DISCOVER OUR STORY CSS PART START === --> */
+    .discover-inner {
+        flex-direction: column;
+    }
+
+    .discover-left {
+        width: 100%;
+        padding: 0;
+    }
+
+    .discover-left h2 {
+        text-align: center;
+    }
+
+    .discover-right {
+        width: 100%;
+        padding: 0;
+    }
+
+    .discover-right p {
+        margin: 20px 0;
+    }
+
+    /* <!-- === CAR STORY PART CSS START === --> */
+    .car-story-inner {
+        flex-direction: column;
+        align-items: center;
+        padding: 5% 0;
+    }
+
+    .car-story-left {
+        width: 500px;
+        height: 800px;
+        margin-bottom: 20px;
+    }
+
+    .car-story-right {
+        width: 500px;
+        height: 800px;
+    }
+
+    /* <!-- === CAR STORY PART START === --> */
+    .car-story-slider .card-blank,
+    .car-story-slider .card-dayvan,
+    .car-story-slider .card-temp,
+    .car-story-slider .card-flatbed {
+        height: 600px;
+    }
+
+    .card-dayvan .card-text:hover {
+        height: 400px;
+        padding-top: 40%;
+    }
+
+    .card-dayvan .card-text p {
+        margin: 10px 0;
+    }
+
+    /* <!-- === WHAT OUR CLIENT CSS PART START === --> */
+    .client-content p {
+        padding: 0 150px;
+    }
+
+
+}
+
+@media screen and (max-width:767px) {
+
+    /* === COMON CLASS === */
+    h2 {
+        font-size: 40px;
+    }
+
+
+    .main-logo {
+        height: 80px;
+        width: 80px;
+    }
+    /* <!-- === BANNER PART CSS START === --> */
+    .banner-text {
+        width: 80%;
+    }
+
+    .banner-text h1 {
+        font-size: 80px;
+    }
+
+    .banner-text p {
+        margin-top: 10px;
+        padding: 0 0 0 10px;
+    }
+
+    /* <!-- === WELCOM TO LTS PART START === --> */
+    .welcome-img {
+        flex-direction: column;
+    }
+
+    .wc-video {
+        margin: 20px 0;
+    }
+
+    .car-video {
+        top: 60%;
+    }
+
+    .welcome-lext h2::before {
+        top: 70px;
+    }
+
+    /* <!-- === CAR STORY PART START === --> */
+    .car-story-slider .card-blank,
+    .car-story-slider .card-dayvan,
+    .car-story-slider .card-temp,
+    .car-story-slider .card-flatbed {
+        height: 400px;
+    }
+
+
+    .card-dayvan .card-text:hover {
+        height: 300px;
+        padding-top: 10%;
+    }
+
+    .card-temp .card-text:hover,
+    .card-blank .card-text:hover,
+    .card-flatbed .card-text:hover {
+        height: 200px;
+        padding-top: 20%;
+    }
+
+    .card-temp .card-text h3::after,
+    .card-blank .card-text h3::after {
+        left: 120px;
+        bottom: 10px;
+    }
+
+    .card-temp .card-text h3,
+    .card-blank .card-text h3,
+    .card-flatbed .card-text h3,
+    .card-dayvan .card-text h3 {
+        font-size: 15px;
+    }
+
+    .card-dayvan .card-text p {
+        font-size: 16px;
+    }
+
+    .card-flatbed .card-text h3::after,
+    .card-dayvan .card-text h3::after {
+        width: 50%;
+        left: 55px;
+    }
+
+    /* <!-- === DISCOVER OUR STORY CSS PART START === --> */
+    .why-choose-top h2::before {
+        top: 65px;
+    }
+
+    /* <!-- === WHAT OUR CLIENT CSS PART START === --> */
+    .our-client-main h2::before {
+        top: 80px;
+    }
+
+    .client-content p {
+        padding: 0 100px;
+        margin-top: 20px;
+    }
+
+    .client-slider .pre-arow-btn {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+
+    .client-slider .next-arow-btn {
+        width: 40px;
+        height: 40px;
+        line-height: 40px;
+    }
+}
+
+@media screen and (max-width:575px) {
+
+    /* === COMON CLASS === */
+    h2 {
+        font-size: 30px;
+    }
+    .main-logo {
+        height: 70px;
+        width: 70px;
+    }
+
+    /* <!-- === BANNER PART CSS START === --> */
+    .banner-text {
+        width: 95%;
+        text-align: center;
+        margin: 100px 0 0 0;
+    }
+
+    .banner-text h1 {
+        font-size: 65px;
+    }
+
+    .banner-text span {
+        font-size: 30px;
+    }
+
+    .banner-icon ul {
+        line-height: 35px;
+    }
+
+    .banner-text p {
+        line-height: normal;
+        font-size: 14px;
+
+    }
+
+    .banner-text p::before {
+        height: 50px;
+    }
+
+
+    /* <!-- === WELCOM TO LTS PART START === --> */
+    .welcome-img .wc-logo {
+        width: 100%;
+        height: auto;
+    }
+
+    .wc-video {
+        margin: 10px 0;
+    }
+
+    .car-video {
+        top: 50%;
+    }
+
+    .welcome-img .wc-logo img {
+        width: 100%;
+    }
+
+    .welcome-lext {
+        padding: 10px 0;
+    }
+
+    .welcome-lext h2::before {
+        top: 50px;
+    }
+
+    .welcome-lext p {
+        text-align: center;
+        margin-top: 10px;
+        font-size: 16px;
+        line-height: normal;
+        padding-right: 0;
+    }
+
+    /* <!-- === DISCOVER OUR STORY CSS PART START === --> */
+    .discover-left h2 {
+        line-height: normal;
+    }
+
+    .discover-right {
+        text-align: center;
+        line-height: normal;
+    }
+
+    .discover-right p {
+        font-size: 16px;
+    }
+
+    .discover-btn {
+        padding: 3%;
+    }
+
+    /* <!-- === CAR STORY PART START === --> */
+    .car-story-slider .card-blank,
+    .car-story-slider .card-dayvan,
+    .car-story-slider .card-temp,
+    .car-story-slider .card-flatbed {
+        height: 300px;
+    }
+
+    .card-temp .card-text:hover,
+    .card-blank .card-text:hover,
+    .card-flatbed .card-text:hover {
+        height: 100px;
+        padding-top: 0;
+    }
+
+    .card-temp .card-text,
+    .card-blank .card-text,
+    .card-flatbed .card-text {
+        height: 50px;
+
+    }
+
+    .card-dayvan .card-text:hover {
+        height: 200px;
+        padding-top: 0;
+    }
+
+    .card-dayvan .card-text {
+        height: 100px;
+    }
+
+    .card-dayvan .card-text a {
+        font-size: 14px;
+    }
+
+    .card-dayvan .card-text p {
+        font-size: 14px;
+        margin: 0;
+    }
+
+    /* <!-- === WHY CHOOSE  US? PART CSS START === --> */
+
+    .why-choose-wrap .content {
+        text-align: center;
+    }
+
+    .why-choose-wrap .content img {
+        margin-left: 0;
+    }
+
+    .why-choose-wrap .content h3 {
+        font-size: 18px;
+        margin: 10px 0;
+    }
+
+    .why-choose-wrap .content h3::before {
+        top: 35px;
+    }
+
+    .why-choose-wrap .content p {
+        line-height: normal;
+        font-size: 15px;
+        margin: 20px 0 0 0px;
+    }
+
+    .why-choose-top h2::before {
+        top: 50px;
+    }
+
+    /* <!-- === WHAT OUR CLIENT CSS PART START === --> */
+    .our-client-main h2::before {
+        top: 50px;
+    }
+
+    .client-content p {
+        padding: 0px;
+        margin-top: 10px;
+        font-size: 14px;
+    }
+
+    .client-slider .pre-arow-btn {
+        top: 120px;
+    }
+
+    .client-slider .next-arow-btn {
+        top: 120px;
+    }
+
+    /* <!-- === WHAT OUR CLIENT CSS PART START === --> */
+
+    .partners-inner h3 {
+        text-align: center;
+    }
+
+    /* <!-- === FOOTER PART CSS  START === --> */
+    .footer-inner {
+        flex-direction: column;
+    }
+
+    .ftr-logo {
+        text-align: center;
+        width: 100%;
+    }
+    .ftr-logo .inner-logo{
+        margin: auto;
+    }
+    .ftr-logo ul{
+        justify-content:center;
+    }
+
+    .ftr-list {
+        width: 100%;
+    }
+    .ftr-list ul li a {
+        font-size: 14px;
+    }
+    .ftr-list h3{
+        font-size: 16px;
+    }
+    .ftr-list .ftr-links{
+        margin-bottom: 10px;
+    }
+    .ftr-list .ftr-shippers {
+        margin-bottom: 10px;
+    }
+    .ftr-list .frt-contact{
+        margin-bottom: 10px;
+    }
+    .ftr-list .frt-contact ul li a{
+        font-size: 14px;
+    }
+    .ftr-end {
+        font-size: 14px;
+    }
+  
+}
+
+@media screen and (max-width:375px) {
+
+    /* <!-- === BANNER PART CSS START === --> */
+    .banner-text h1 {
+        font-size: 45px;
+    }
+
+    .banner-text span {
+        font-size: 25px;
+    }
+
+    /* <!-- === WELCOM TO LTS PART START === --> */
+
+    .wc-video {
+        width: 100%;
+        background-size: 100% 100%;
+    }
+
+    .car-video {
+        height: 300px;
+    }
+
+    .car-video i {
+        top: 30px;
+    }
+
+    .welcome-lext p {
+        font-size: 14px;
+    }
+
+    /* <!-- === DISCOVER OUR STORY CSS PART START === --> */
+    .discover-right p {
+        font-size: 14px;
+    }
+
+
+    /* <!-- === WHY CHOOSE  US? PART CSS START === --> */
+    .why-choose-wrap .content {
+        width: 100%;
+    }
+
+    .why-choose-wrap .content h3 {
+        font-size: 15px;
+    }
+
+    .why-choose-wrap .content p {
+        font-size: 14px;
+    }
+}

@@ -1,0 +1,468 @@
+/* === FULL PAGE COLLOR ROOT === */
+:root {
+    --blue: #1C74BC;
+    --black: #0000;
+    --white: #ffff;
+    --ofwhite: #CECECE;
+    --gray: #242737;
+    --graylight: #666666;
+}
+
+p {
+    font-size: 18px;
+    color: var(--gray);
+}
+
+
+
+/* === BANNER PART CSS START === */
+.about-banner {
+    position: relative;
+    padding: 11% 0 9.2% 0;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+}
+.box-img-legt{
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+.box-img-right{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+.bnr-sado{
+    position: absolute;
+    top: 0;
+    right: 0;
+}
+
+.about-banner::before {
+    content: '';
+    left: 0;
+    top: 0;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: 1;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.6671043417366946) 0%, transparent 100%);
+}
+
+.about-banner-inner {
+    position: relative;
+    z-index: 5;
+}
+
+.about-banner-inner h1 {
+    font-size: 110px;
+    font-weight: bold;
+    color: transparent;
+    -webkit-text-stroke: 0.1vw var(--white);
+    text-transform: uppercase;
+    margin-top: 37px;
+    margin-left: 5px;
+}
+
+/* <!-- === DISCOVER OUR STORY PART === --> */
+.discover-story {
+    padding: 3% 0 2.4% 0;
+}
+
+.discover-story-top {
+    display: flex;
+    /* margin-top: 50px; */
+}
+
+.discover-story-top span {
+    color: var(--blue);
+}
+
+.story-left {
+    width: 40%;
+    padding: 17px 50px 0 5px;
+}
+
+.story-left h2 {
+    line-height: 70px;
+}
+
+.story-left h2::before {
+    top: 144px;
+}
+
+.text-right {
+    width: 60%;
+    padding: 30px 0 0 32px;
+}
+
+.text-right p {
+    line-height: 29px;
+}
+
+.discover-story-btm {
+    padding: 35px 0px 0 7px;
+}
+
+.discover-story-btm p {
+    line-height: 34px;
+    padding-right: 9px;
+}
+
+
+
+.owl-carousel {
+    padding-top: 6%;
+}
+
+.owl-carousel .item .content-like img {
+    margin: 0 0 0 35px;
+    width: 9%;
+}
+
+.owl-carousel .item .content-like h3 {
+    margin: 35px 0 0 7px;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.owl-carousel .item .content-like h3::before {
+    content: '';
+    position: absolute;
+    width: 49px;
+    height: 1px;
+    background-color: black;
+    top: 44px;
+}
+
+.owl-carousel .item .content-like p {
+    margin: 30px 0 0 3px;
+}
+
+.owl-carousel .item .content-save {
+    margin-left: 10px;
+}
+
+.owl-carousel .item .content-save img {
+    margin: 0 0 0 43px;
+    width: 9%;
+}
+
+.owl-carousel .item .content-save h3 {
+    margin: 35px 0 0 6px;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.owl-carousel .item .content-save h3::before {
+    content: '';
+    position: absolute;
+    width: 49px;
+    height: 1px;
+    background-color: black;
+    top: 44px;
+}
+
+
+.owl-carousel .item .content-save p {
+    margin: 34px 0 0 8px;
+}
+
+.owl-carousel .item .content-¸ {
+    margin-left: 22px;
+}
+
+.owl-carousel .item .content-text img {
+    margin: 0 0 0 43px;
+    width: 9%;
+}
+
+.owl-carousel .item .content-text h3 {
+    margin: 36px 0 0 15px;
+    font-size: 20px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+.owl-carousel .item .content-text h3::before {
+    content: '';
+    position: absolute;
+    width: 49px;
+    height: 1px;
+    background-color: black;
+    top: 44px;
+}
+
+
+.owl-carousel .item .content-text p {
+    margin: 30px 0 0 18px;
+}
+
+.owl-prev {
+    height: 50px !important;
+    width: 50px !important;
+    line-height: 10px !important;
+    display: inline-block !important;
+    text-align: center !important;
+    border-radius: 50% !important;
+    position: absolute !important;
+    left: -90px !important;
+    top: 225px !important;
+    font-size: 40px !important;
+}
+
+.owl-prev:hover {
+    border: 2px solid #1C74BC !important;
+    background-color: white !important;
+    color: #1C74BC !important;
+    box-shadow: rgba(9, 9, 9, 0.695) 0px 3px 8px !important;
+}
+
+.owl-next {
+    height: 50px !important;
+    width: 50px !important;
+    line-height: 10px !important;
+    display: inline-block !important;
+    text-align: center !important;
+    border-radius: 50% !important;
+    position: absolute !important;
+    right: -100px !important;
+    top: 225px !important;
+    font-size: 40px !important;
+}
+
+.owl-next:hover {
+    border: 2px solid #1C74BC !important;
+    background-color: white !important;
+    color: #1C74BC !important;
+    box-shadow: rgba(9, 9, 9, 0.695) 0px 3px 8px !important;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:1299px) {
+    /* === BANNER PART CSS START === */
+
+    .about-banner {
+        padding: 11% 0 9% 0;
+    }
+
+    .discover-story {
+        padding: 3% 0;
+    }
+
+    .text-right {
+        padding: 30px 0 0 0px;
+    }
+
+    /* <!-- === DISCOVER OUR STORY PART === --> */
+    .owl-next {
+        position: static !important;
+    }
+
+    .owl-prev {
+        position: static !important;
+    }
+}
+
+@media screen and (max-width:991px) {
+    /* === BANNER PART CSS START === */
+
+
+    .about-banner-inner h1 {
+        font-size: 100px;
+
+    }
+    .box-img-legt img{
+        width: 50%;
+    }
+
+    .story-left {
+        padding: 17px 30px 0 5px;
+    }
+    .bnr-sado{
+        width: 50%;
+    }
+    .box-img-right{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width:767px) {
+    /* === BANNER PART CSS START === */
+
+    .about-banner {
+        padding: 14% 0 9% 0;
+    }
+
+    .about-banner-inner h1 {
+        font-size: 80px;
+    }
+
+
+    /* <!-- === DISCOVER OUR STORY PART === --> */
+    .discover-story-top {
+        flex-direction: column;
+    }
+
+    .story-left {
+        width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .story-left h2 {
+        line-height: normal;
+    }
+
+    .story-left h2::before {
+        top: 60px;
+    }
+
+    .text-right {
+        width: 100%;
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .text-right p {
+        line-height: normal;
+    }
+
+    .discover-story-btm {
+        padding: 10px 0;
+        text-align: center;
+    }
+
+    .discover-story-btm p {
+        line-height: normal;
+        padding: 0;
+    }
+    .owl-prev{
+        height: 40px !important;
+        width: 40px !important;
+        line-height: 0px !important;
+        font-size: 30px !important;
+    }
+    .owl-next{
+        height: 40px !important;
+        width: 40px !important;
+        line-height: 0px !important;
+        font-size: 30px !important;
+    }
+
+}
+
+@media screen and (max-width:575px) {
+    /* === BANNER PART CSS START === */
+
+    p {
+        font-size: 14px;
+    }
+
+    .about-banner {
+        padding: 20% 0 9% 0;
+    }
+
+    .about-banner-inner h1 {
+        font-size: 65px;
+        text-align: center;
+        margin-top: 10px;
+    }
+
+    /* <!-- === DISCOVER OUR STORY PART === --> */
+
+    .story-left h2::before {
+        top: 50px;
+    }
+
+    .owl-carousel .item .content-like {
+        text-align: center;
+    }
+
+    .owl-carousel .item .content-like img {
+        margin: auto;
+    }
+
+    .owl-carousel .item .content-like h3 {
+        margin: 10px 0;
+    }
+    .owl-carousel .item .content-like  h3::before{
+        top: 30px;
+    }
+
+    .owl-carousel .item .content-like p {
+        margin: 10px 0;
+    }
+
+    .owl-carousel .item .content-save {
+        text-align: center;
+        margin: 0;
+    }
+
+    .owl-carousel .item .content-save img {
+        margin: auto;
+    }
+
+    .owl-carousel .item .content-save h3 {
+        margin: 10px 0;
+    }
+    .owl-carousel .item .content-save  h3::before{
+        top: 30px;
+    }
+
+    .owl-carousel .item .content-save p {
+        margin: 10px 0;
+    }
+
+    .owl-carousel .item .content-text {
+        text-align: center;
+        margin: 0;
+    }
+
+    .owl-carousel .item .content-text img {
+        margin: auto;
+    }
+
+    .owl-carousel .item .content-text h3 {
+        margin: 10px 0;
+    }
+    .owl-carousel .item .content-text h3::before{
+        top: 30px;
+    }
+
+    .owl-carousel .item .content-text p {
+        margin: 10px 0;
+    }
+
+    .owl-prev{
+        height: 30px !important;
+        width: 30px !important;
+        font-size: 20px !important;
+    }
+    .owl-next{
+        height: 30px !important;
+        width: 30px !important;
+        font-size: 20px !important;
+    }
+}
+
+@media screen and (max-width:375px) {
+
+    /* === BANNER PART CSS START === */
+    .about-banner {
+        padding: 25% 0 9% 0;
+    }
+
+    .about-banner-inner h1 {
+        font-size: 45px;
+    }
+}
